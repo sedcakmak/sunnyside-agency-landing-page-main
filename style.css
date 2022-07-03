@@ -29,6 +29,7 @@ font-family: 'Fraunces', serif; */
 
 body {
   font-size: 18px;
+  /* font-size: 112.5%; */
   height: 100vh;
 }
 
@@ -47,7 +48,7 @@ header {
   background-position: center;
   background-size: cover;
   /* background-size: 100% 75%; */
-  padding: 1rem;
+  padding: 2rem;
   height: 90%;
   color: var(--white);
 }
@@ -56,9 +57,9 @@ header h1 {
   text-transform: uppercase;
   font-family: var(--fraunces);
   font-weight: var(--bold-900);
-  letter-spacing: 8px;
+  letter-spacing: 0.5rem;
   text-align: center;
-  /* letter-spacing: 0.5rem; */
+  padding-top: 5rem;
 }
 
 /* .icon-arrow-down {
@@ -66,29 +67,36 @@ header h1 {
   margin: 11rem auto;
 } */
 
-.test {
+.icon-arrow {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 300px;
+  height: 200px;
 }
+
 .icon-arrow-down {
   vertical-align: middle;
 }
+
+nav {
+  display: flex;
+  /* align-items: center; */
+}
+
 .menu {
   list-style-type: none;
   font-family: var(--barlow);
-  display: flex;
 }
 
 .logo {
   display: block;
   margin-right: auto;
+  align-self: center;
 }
 
 .menu-item {
   display: inline-block;
-  margin: auto 20px;
+  margin: auto 1.25rem;
 }
 
 .menu-item-cta {
@@ -99,10 +107,65 @@ header h1 {
   text-transform: uppercase;
 }
 
+.hamburger-lines {
+  display: block;
+  height: 28px;
+  width: 30px;
+}
+
+.line {
+  height: 0.15rem;
+  margin: 0.5rem auto;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  background-color: var(--white);
+  transition: transform 0.1s ease-out;
+}
+
+.line1 {
+  margin-top: 0;
+}
+
+/*BURASI DISPLAY:NONE OLACAK*/
+
+nav .hamburger-lines {
+  display: block;
+}
+
+/*BUNU DA SIL*/
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+nav input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+nav input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
 @media screen and (max-width: 480px) {
   header {
     background-image: url("images/mobile/image-header.jpg");
     background-size: 100% 100%;
     height: 90%;
   }
+
+  nav .hamburger-lines {
+    display: block;
+  }
+}
+
+.menu {
+  display: none;
 }
