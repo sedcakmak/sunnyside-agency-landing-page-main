@@ -74,15 +74,14 @@ nav {
 .logo {
   display: block;
   margin-right: auto;
-  /* align-self: center; */
 }
+
 .menu {
   list-style-type: none;
   font-family: var(--barlow);
   display: flex;
   display: none;
   flex-direction: row;
-  /*mobil icin*/
   justify-content: center;
   align-items: center;
 }
@@ -99,11 +98,10 @@ nav {
   width: 30px;
 }
 .menu-item-items:active {
-  border-bottom: 2px solid var(--yellow);
   color: var(--very-dark-desaturated-blue);
 }
 
-/*ripple effect when touching the button on mobile*/
+/* ripple effect */
 
 .menu-item-cta {
   border-radius: 2rem;
@@ -205,7 +203,6 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     font-family: var(--barlow);
     display: flex;
     flex-direction: row;
-    /*mobil icin*/
     justify-content: center;
     align-items: center;
   }
@@ -217,12 +214,16 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   .menu-item-cta {
     background-color: var(--white);
     color: var(--very-dark-desaturated-blue);
-    /* cursor: pointer; */
   }
 
   .menu-item-cta:hover {
     box-shadow: 0 0.5em 0.5em -0.4em var(--dark-blue);
-    transform: translateY(-0.25em);
+    /* transform: translateY(-0.25em); */
+  }
+
+  .menu-item-cta:active {
+    box-shadow: none;
+    transform: translateY(0.25em);
   }
   .menu-item-items:hover {
     background-color: inherit;
@@ -240,7 +241,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     right: 0;
     bottom: 0;
     left: 0;
-    transition: all 0.5s;
+    transition: all 0.3s;
     border-bottom: 4px solid var(--yellow);
     transform: scale(0, 1);
   }
