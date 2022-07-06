@@ -59,11 +59,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 200px;
-}
-
-.icon-arrow-down {
-  vertical-align: middle;
+  height: calc(70%);
 }
 
 nav {
@@ -245,36 +241,4 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     border-bottom: 4px solid var(--yellow);
     transform: scale(0, 1);
   }
-
-  /* .menu-item-items:active {
-    color: var(--very-dark-desaturated-blue);
-  } */
 }
-
-/* .menu-item-items:hover:after {
-    content: "";
-    background-color: var(--yellow);
-    -webkit-animation: border-bottom 0.1s linear;
-    animation: border-bottom 0.1s linear;
-    height: 5px;
-    display: block;
-    margin-top: 4px;
-  } */
-
-/* @-webkit-keyframes border-bottom {
-  0% {
-    width: 50%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes border-bottom {
-  0% {
-    width: 50%;
-  }
-  100% {
-    width: 100%;
-  }
-} */
