@@ -312,9 +312,43 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   background-image: url("images/mobile/image-photography.jpg");
 }
 
+.testimonials-section {
+  padding: 40px;
+  font-family: var(--fraunces);
+  text-align: center;
+}
+
+.testimonials-header {
+  color: var(--grayish-blue);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.testimonials-item {
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
 .testimonials img {
   border-radius: 50%;
   width: 20%;
+}
+
+.testimonials-text {
+  font-family: var(--barlow);
+  color: var(--very-dark-grayish-blue);
+}
+.testimonials-name {
+  font-weight: var(--bold-900);
+}
+.testimonials-title {
+  color: var(--grayish-blue);
+  font-size: 75%;
 }
 
 /* Footer */
@@ -437,7 +471,7 @@ footer {
   .offer-section h2 {
     font-size: 1.5rem;
   }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1000px) {
     .image-grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -450,6 +484,9 @@ footer {
     }
     .offer-section-item {
       width: 45%;
+    }
+    .testimonials {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
