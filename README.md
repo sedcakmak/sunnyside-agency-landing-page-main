@@ -44,6 +44,12 @@ I built the hamburger menu from scratch without copy-pasting and modifying other
 
 I would like to improve my skills in building responsive websites. Even though I constantly refactured my code, I still believe that the media queries section should be shorter.
 
+I ran into two bugs in Chrome which I couldn't find a solution for:
+
+The font-sizes doesn't reflect the actual value. Also, the SVG for the social media icons sometimes doesn't show up.
+
+Both of these work on localhost Chrome and Chrome mobile as expected, but works arbitrarily on live site desktop Chrome. (It works on Safari and Microsoft Edge)
+
 ## Author
 
 - Github - [@sedcakmak](https://github.com/sedcakmak)
