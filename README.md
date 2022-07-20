@@ -42,7 +42,7 @@ I built the hamburger menu from scratch without copy-pasting and modifying other
 
 ### Continued development
 
-I would like to improve my skills in building responsive websites. Even though I constantly refactured my code, I still believe that the media queries section should be shorter.
+I would like to improve my skills in building responsive websites. Even though I constantly refactored my code, I still believe that the media queries section should be shorter.
 
 I ran into two bugs in Chrome which I couldn't find a solution for:
 
