@@ -194,6 +194,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 
 .image-grid {
   display: grid;
+  align-items: center;
   width: 100%;
   grid-template-columns: 1fr;
 }
@@ -203,10 +204,14 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   height: 100%;
 }
 
+.image-grid picture {
+  height: 100%;
+}
+
 .image-grid h2 {
   font-family: var(--fraunces);
   font-weight: var(--bold-900);
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .section-text p {
@@ -514,11 +519,13 @@ footer {
   }
   @media screen and (min-width: 1000px) {
     .image-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
     }
     .section-text {
-      padding: 160px;
+      width: 71%;
       text-align: left;
+      padding-left: 4rem;
+      margin-left: 3rem;
     }
     #section-text-1 {
       order: -1;
