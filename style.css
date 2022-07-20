@@ -517,7 +517,7 @@ footer {
       grid-template-columns: repeat(2, 1fr);
     }
     .section-text {
-      padding: 10rem;
+      padding: 160px;
       text-align: left;
     }
     #section-text-1 {
@@ -549,7 +549,7 @@ footer {
       grid-template-columns: repeat(4, 1fr);
     }
 
-    .image-grid h2 {
+    .section-text h2 {
       font-size: 2.5rem;
     }
 
