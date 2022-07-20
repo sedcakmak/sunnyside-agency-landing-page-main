@@ -100,7 +100,7 @@ nav {
   height: 28px;
   width: 30px;
 }
-.menu-item-items:active {
+.menu-item-items:hover {
   color: var(--very-dark-desaturated-blue);
 }
 
@@ -458,6 +458,10 @@ footer {
     position: relative;
   }
 
+  .menu-item-items:hover {
+    color: inherit;
+  }
+
   .menu-item-cta {
     background-color: var(--white);
     color: var(--very-dark-desaturated-blue);
@@ -470,10 +474,6 @@ footer {
   .menu-item-cta:active {
     box-shadow: none;
     transform: translateY(0.25em);
-  }
-  .menu-item-items:hover {
-    background-color: inherit;
-    border: none;
   }
 
   .menu-item-items:hover::before {
