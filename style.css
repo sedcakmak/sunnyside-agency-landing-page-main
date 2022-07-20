@@ -226,7 +226,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 }
 
 .section-text {
-  padding: 3.5rem 1.25rem;
+  padding: 3.5rem 2.2rem;
   text-align: center;
 }
 
@@ -283,7 +283,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   background-position: 50% 20%;
   height: 35.33rem;
   width: 100%;
-  padding: 0rem 1.25rem 3.1rem;
+  padding: 0rem 2.5rem 3.1rem;
 }
 .offer-section-item {
   text-align: center;
@@ -307,7 +307,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 }
 
 .testimonials-section {
-  padding: 40px;
+  padding: 52px;
   font-family: var(--fraunces);
   text-align: center;
 }
@@ -337,7 +337,7 @@ nav input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 .testimonials-text {
   font-family: var(--barlow);
   color: var(--very-dark-grayish-blue);
-  margin: 12px 0;
+  margin: 12px 8px;
   line-height: 1.7rem;
 }
 .testimonials-name {
@@ -490,6 +490,7 @@ footer {
     transition: all 0.3s;
     border-bottom: 4px solid var(--yellow);
     transform: scale(0, 1);
+    transform-origin: left;
   }
 
   .section-text p {
